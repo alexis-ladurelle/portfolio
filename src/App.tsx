@@ -8,9 +8,14 @@ function App() {
   return (
     <motion.main
       className="py-16 selection:bg-purple-200 sm:py-32 scroll-smooth"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}>
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.4,
+        ease: [0.25, 0.1, 0.25, 1],
+        opacity: { duration: 0.3 },
+        scale: { duration: 0.8 },
+      }}>
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mb-10">
         <header className="my-4 w-full text-right gap-4 flex justify-end-safe">
           <a
@@ -31,22 +36,8 @@ function App() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          {/* PROJECT CARD */}
-          <section className="relative bg-neutral-50 rounded-lg shadow-xl lg:row-span-2 ">
-            <div className="relative flex h-full flex-col overflow-hidden ">
-              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-6">
-                <h6 className="mt-2 text-lg font-medium tracking-tight  max-lg:text-center">
-                  {t("projectCard.title")}
-                </h6>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  {t("projectCard.desc")}
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* ABOUT CARD */}
-          <section className="relative rounded-lg bg-neutral-50 shadow-xl max-lg:row-start-1 ">
+          <section className="relative rounded-lg bg-neutral-50 shadow-xl max-lg:row-start-1  lg:row-span-2">
             <div className="absolute inset-px  max-lg:rounded-t-4xl"></div>
             <div className="relative flex h-full flex-col overflow-hidden ">
               <div className="p-10 sm:p-12">
@@ -61,9 +52,22 @@ function App() {
             </div>
           </section>
 
+          {/* PROJECT CARD */}
+          <section className="relative bg-neutral-50 rounded-lg shadow-xl lg:row-span-1 ">
+            <div className="relative flex h-full flex-col overflow-hidden ">
+              <div className="p-10 sm:p-12">
+                <h6 className="mt-2 text-lg font-medium tracking-tight  max-lg:text-center">
+                  {t("projectCard.title")}
+                </h6>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  {t("projectCard.desc")}
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* LINK CARD */}
-          <section className="relative rounded-lg bg-neutral-50 shadow-xl max-lg:row-start-3 lg:col-start-2 lg:row-start-2 ">
-            <div className="absolute inset-px"></div>
+          <section className="relative rounded-lg bg-neutral-50 shadow-xl max-lg:row-start-4 lg:col-start-2 lg:row-start-2 ">
             <div className="relative flex h-full flex-col overflow-hidden ">
               <div className="p-10 sm:p-12">
                 <h6 className="mt-2 text-lg font-medium tracking-tight  max-lg:text-center">
@@ -73,14 +77,13 @@ function App() {
                   {t("linkCard.desc")}
                 </p>
               </div>
-              <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2"></div>
             </div>
           </section>
 
           {/* TECHNO CARD */}
           <section className="relative rounded-lg bg-neutral-50 shadow-xl lg:row-span-2   ">
             <div className="relative flex h-full flex-col overflow-hidden ">
-              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <div className="p-10 sm:p-12">
                 <h6 className="mt-2 text-lg font-medium tracking-tight  max-lg:text-center">
                   {t("technoCard.title")}
                 </h6>

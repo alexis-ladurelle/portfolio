@@ -41,6 +41,19 @@ i18n.use(initReactI18next).init({
           messagePH: "Laissez votre message ici...",
           sendButton: "Envoyer",
         },
+        projects: {
+          title: "Mes projets",
+          viewProject: "Voir le projet",
+          viewCode: "Code source",
+          project1: {
+            title: "Portfolio Pro",
+            desc: "Un portfolio moderne et réactif construit avec React, TypeScript et Tailwind CSS. Inclut des animations fluides avec Framer Motion et une internationalisation complète.",
+          },
+          project2: {
+            title: "Projet 2",
+            desc: "Description de votre deuxième projet avec les technologies utilisées et les fonctionnalités principales.",
+          },
+        },
       },
     },
     en: {
@@ -75,6 +88,19 @@ i18n.use(initReactI18next).init({
           messageLabel: "Your message",
           messagePH: "Leave your message here...",
           sendButton: "Send",
+        },
+        projects: {
+          title: "My projects",
+          viewProject: "View project",
+          viewCode: "Source code",
+          project1: {
+            title: "Portfolio Pro",
+            desc: "A modern and responsive portfolio built with React, TypeScript and Tailwind CSS. Features smooth animations with Framer Motion and complete internationalization.",
+          },
+          project2: {
+            title: "Project 2",
+            desc: "Description of your second project with the technologies used and main features.",
+          },
         },
       },
     },

@@ -4,6 +4,7 @@ import Card from "./components/card-component.tsx";
 import ContactForm from "./components/contact-form.tsx";
 import LangSwitcher from "./components/lang-switcher.tsx";
 import ToTopBtn from "./components/to-top-btn.tsx";
+import ProjectCard from "./components/project-card.tsx";
 
 function App() {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ function App() {
   return (
     <motion.main
       className="py-16 selection:bg-purple-200 sm:py-32 scroll-smooth"
+      viewport={{ once: true }}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -44,6 +46,8 @@ function App() {
             title={t("aboutCard.title")}
             description={t("aboutCard.desc")}
             className="max-lg:row-start-1 lg:row-span-2"
+            delay={0.1}
+            direction="left"
           />
 
           {/* PROJECT CARD */}
@@ -51,6 +55,8 @@ function App() {
             title={t("projectCard.title")}
             description={t("projectCard.desc")}
             className="lg:row-span-1"
+            delay={0.2}
+            direction="up"
           />
 
           {/* LINK CARD */}
@@ -58,6 +64,8 @@ function App() {
             title={t("linkCard.title")}
             description={t("linkCard.desc")}
             className="max-lg:row-start-4 lg:col-start-2 lg:row-start-2"
+            delay={0.3}
+            direction="up"
           />
 
           {/* TECHNO CARD */}
@@ -65,11 +73,37 @@ function App() {
             title={t("technoCard.title")}
             description={t("technoCard.desc")}
             className="lg:row-span-2"
+            delay={0.4}
+            direction="right"
           />
         </div>
       </div>
+      <section className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24">
+        <h2 className="text-4xl font-semibold text-center mb-16">
+          {t("projects.title")}
+        </h2>
 
-      {/* CONTACT SECTION */}
+        <div className="space-y-24">
+          <ProjectCard
+            title={t("projects.project1.title")}
+            description={t("projects.project1.desc")}
+            image="/path/to/image.jpg"
+            tags={["React", "TypeScript", "Tailwind", "Framer Motion"]}
+            githubUrl="https://github.com/..."
+            liveUrl="https://..."
+            index={0}
+          />
+
+          <ProjectCard
+            title={t("projects.project2.title")}
+            description={t("projects.project2.desc")}
+            image="/path/to/image2.jpg"
+            tags={["Next.js", "Node.js"]}
+            githubUrl="https://github.com/..."
+            index={1}
+          />
+        </div>
+      </section>
       <ContactForm />
       <ToTopBtn />
     </motion.main>

@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import type { ReactNode } from "react";
 
 interface CardProps {
@@ -5,6 +6,8 @@ interface CardProps {
   description: string;
   children?: ReactNode;
   className?: string;
+  delay?: number;
+  direction?: "left" | "right" | "up" | "down";
 }
 
 export default function Card({
@@ -12,10 +15,24 @@ export default function Card({
   description,
   children,
   className = "",
+  delay = 0,
+  direction = "up",
 }: CardProps) {
+  const directionMap = {
+    left: { x: -50, y: 0 },
+    right: { x: 50, y: 0 },
+    up: { x: 0, y: 20 },
+    down: { x: 0, y: -20 },
+  };
+
   return (
-    <section
-      className={`relative rounded-lg bg-neutral-50 shadow-xl ${className}`}>
+    <motion.section
+      className={`card-base ${className}`}
+      initial={{ opacity: 0, ...directionMap[direction] }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, delay, ease: "easeOut" }}
+      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
       <div className="absolute inset-px max-lg:rounded-t-4xl"></div>
       <div className="relative flex h-full flex-col overflow-hidden">
         <div className="p-10 sm:p-12">
@@ -32,6 +49,6 @@ export default function Card({
           </div>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 }

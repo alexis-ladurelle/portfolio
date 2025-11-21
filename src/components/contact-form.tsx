@@ -59,7 +59,7 @@ export default function ContactForm() {
                 id="message"
                 name="message"
                 rows={6}
-                className="form-input p-2.5"
+                className="form-input p-2.5 min-h-12 max-h-96 "
                 placeholder={t("contactSection.messagePH")}
               />
             </div>

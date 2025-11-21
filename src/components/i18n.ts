@@ -16,7 +16,7 @@ i18n.use(initReactI18next).init({
         },
         projectCard: {
           title: "Mes projets",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "Quelques-uns de mes travaux récents. Section qui sera mise à jour régulièrement.",
         },
         aboutCard: {
           title: "Qui suis-je ?",
@@ -46,12 +46,12 @@ i18n.use(initReactI18next).init({
           viewProject: "Voir le projet",
           viewCode: "Code source",
           project1: {
-            title: "Portfolio Pro",
+            title: "Portfolio",
             desc: "Un portfolio moderne et réactif construit avec React, TypeScript et Tailwind CSS. Inclut des animations fluides avec Framer Motion et une internationalisation complète.",
           },
           project2: {
             title: "Projet 2",
-            desc: "Description de votre deuxième projet avec les technologies utilisées et les fonctionnalités principales.",
+            desc: "Description deuxième projet avec les technologies utilisées et les fonctionnalités principales.",
           },
         },
       },
@@ -64,7 +64,7 @@ i18n.use(initReactI18next).init({
         },
         projectCard: {
           title: "My projects",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "Some of my recent works. Section that will be updated regularly.",
         },
         aboutCard: {
           title: "Who am I?",
@@ -94,12 +94,12 @@ i18n.use(initReactI18next).init({
           viewProject: "View project",
           viewCode: "Source code",
           project1: {
-            title: "Portfolio Pro",
+            title: "Portfolio",
             desc: "A modern and responsive portfolio built with React, TypeScript and Tailwind CSS. Features smooth animations with Framer Motion and complete internationalization.",
           },
           project2: {
             title: "Project 2",
-            desc: "Description of your second project with the technologies used and main features.",
+            desc: "Description second project with the technologies used and main features.",
           },
         },
       },

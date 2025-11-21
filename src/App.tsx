@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { Link } from "lucide-react";
 import Card from "./components/card-component.tsx";
 import ContactForm from "./components/contact-form.tsx";
 import LangSwitcher from "./components/lang-switcher.tsx";
@@ -51,13 +52,16 @@ function App() {
           />
 
           {/* PROJECT CARD */}
-          <Card
-            title={t("projectCard.title")}
-            description={t("projectCard.desc")}
-            className="lg:row-span-1"
-            delay={0.2}
-            direction="up"
-          />
+          <a href="#projects">
+            <Card
+              title={t("projectCard.title")}
+              description={t("projectCard.desc")}
+              className="lg:row-span-1"
+              delay={0.2}
+              direction="up"
+              icon={<Link />}
+            />
+          </a>
 
           {/* LINK CARD */}
           <Card
@@ -78,7 +82,9 @@ function App() {
           />
         </div>
       </div>
-      <section className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24">
+      <section
+        className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24"
+        id="projects">
         <h2 className="text-4xl font-semibold text-center mb-16">
           {t("projects.title")}
         </h2>
@@ -87,18 +93,18 @@ function App() {
           <ProjectCard
             title={t("projects.project1.title")}
             description={t("projects.project1.desc")}
-            image="/path/to/image.jpg"
+            image="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?semt=ais_hybrid&w=740&q=80"
             tags={["React", "TypeScript", "Tailwind", "Framer Motion"]}
             githubUrl="https://github.com/..."
-            liveUrl="https://..."
+            liveUrl={globalThis.location.href}
             index={0}
           />
 
           <ProjectCard
             title={t("projects.project2.title")}
             description={t("projects.project2.desc")}
-            image="/path/to/image2.jpg"
-            tags={["Next.js", "Node.js"]}
+            image="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?semt=ais_hybrid&w=740&q=80"
+            tags={["React", "Node.js"]}
             githubUrl="https://github.com/..."
             index={1}
           />

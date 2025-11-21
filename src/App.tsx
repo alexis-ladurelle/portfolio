@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import LangSwitcher from "./components/langSwitch";
+import LangSwitcher from "./components/langSwitch.tsx";
+import ToTopBtn from "./components/toTopBtn.tsx";
 
 function App() {
   const { t } = useTranslation();
@@ -156,6 +157,7 @@ function App() {
           </div>
         </section>
       </section>
+      <ToTopBtn />
     </motion.main>
   );
 }

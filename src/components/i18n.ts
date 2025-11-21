@@ -12,7 +12,7 @@ i18n.use(initReactI18next).init({
       translation: {
         hero: {
           contactLink: "Me Contacter",
-          role: "Developpeur Web",
+          role: "Développeur Web",
         },
         projectCard: {
           title: "Mes projets",

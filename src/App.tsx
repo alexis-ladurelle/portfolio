@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import Card from "./components/card.tsx";
+import Card from "./components/card-component.tsx";
 import ContactForm from "./components/contact-form.tsx";
 import LangSwitcher from "./components/lang-switcher.tsx";
 import ToTopBtn from "./components/to-top-btn.tsx";

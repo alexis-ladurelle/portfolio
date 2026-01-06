@@ -52,7 +52,9 @@ export default function ProjectCard({
         <h3 className="text-2xl lg:text-3xl font-semibold text-gray-900">
           {title}
         </h3>
-        <p className="text-gray-600 leading-relaxed">{description}</p>
+        <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+          {description}
+        </p>
 
         {/* Tags */}
         {tags.length > 0 && (
@@ -74,7 +76,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-300 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
               {t("projects.viewCode")}
@@ -85,7 +87,7 @@ export default function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
               {t("projects.viewProject")}

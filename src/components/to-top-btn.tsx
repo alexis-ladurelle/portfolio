@@ -36,7 +36,7 @@ const ToTopBtn = () => {
             type="button"
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="rounded-full bg-white/50 p-3 text-xs font-medium uppercase leading-tight text-purple-500 shadow-md transition duration-150 ease-in-out hover:bg-white/70 pointer-events-auto">
+            className="rounded-full bg-white/50 p-3 text-xs font-medium uppercase leading-tight text-purple-500 shadow-md transition duration-150 ease-in-out hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 pointer-events-auto">
             <img
               src={chevronUp}
               alt="Button to scroll to the top"

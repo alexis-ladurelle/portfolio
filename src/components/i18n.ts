@@ -20,15 +20,15 @@ i18n.use(initReactI18next).init({
         },
         aboutCard: {
           title: "Qui suis-je ?",
-          desc: "Actuelluement étudiant en 2ème année à l'IUT de Metz en BUT informatique, je me spécialise dans le développement web et mobile. Passionné par la création de solutions numériques innovantes, je cherche constamment à améliorer mes compétences techniques et à explorer les dernières tendances du secteur.",
+          desc: "Actuellement étudiant en 2ème année à l'IUT de Metz en BUT informatique, je me spécialise dans le développement web et mobile. Passionné par la création de solutions numériques innovantes, je cherche constamment à améliorer mes compétences techniques et à explorer les dernières tendances du secteur.\n\nJ'aime relever des défis et travailler sur des projets qui ont un impact réel en combinant créativité, technique et accessibilité.",
         },
         linkCard: {
           title: "Mes liens",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "Ci-dessous quelques liens vers mes profiles et moyen de contact.",
         },
         technoCard: {
           title: "Mes technologies",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "Liste des technologies et outils que j'utilise principalement pour développer mes projets.",
         },
         contactSection: {
           title: "Me contacter",
@@ -47,11 +47,11 @@ i18n.use(initReactI18next).init({
           viewCode: "Code source",
           project1: {
             title: "Portfolio",
-            desc: "Un portfolio moderne et réactif construit avec React, TypeScript et Tailwind CSS. Inclut des animations fluides avec Framer Motion et une internationalisation complète.",
+            desc: "Un portfolio moderne et réactif construit avec React, TypeScript et Tailwind CSS. Inclut des animations fluides avec Framer Motion et l'anglais en plus du français.",
           },
           project2: {
-            title: "Projet 2",
-            desc: "Description deuxième projet avec les technologies utilisées et les fonctionnalités principales.",
+            title: "Just Park It",
+            desc: "Application permettant de trouver des places de parking en temps réel grâce à l'intégration de Mapbox GL pour la cartographie et d'un backend PHP/MySQL pour la gestion des profil. Le but est de se faire guider à la place de parking disponible la plus proche de l'utilisateur suivant ses critères (PMR, vehicule électrique, etc.).",
           },
         },
       },
@@ -68,15 +68,15 @@ i18n.use(initReactI18next).init({
         },
         aboutCard: {
           title: "Who am I?",
-          desc: "Currently a second-year student at IUT de Metz in BUT computer science, I specialize in web and mobile development. Passionate about creating innovative digital solutions, I constantly seek to improve my technical skills and explore the latest industry trends.",
+          desc: "Currently a second-year student at IUT de Metz in BUT computer science, I specialize in web and mobile development. Passionate about creating innovative digital solutions, I constantly seek to improve my technical skills and explore the latest industry trends.\n\nI enjoy taking on challenges and working on projects that have a real impact by combining creativity, technology, and accessibility.",
         },
         linkCard: {
           title: "My links",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "Below are some links to my profiles and contact methods.",
         },
         technoCard: {
           title: "My technologies",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.",
+          desc: "List of technologies and tools that I mainly use to develop my projects.",
         },
         contactSection: {
           title: "Contact Me",
@@ -95,11 +95,11 @@ i18n.use(initReactI18next).init({
           viewCode: "Source code",
           project1: {
             title: "Portfolio",
-            desc: "A modern and responsive portfolio built with React, TypeScript and Tailwind CSS. Features smooth animations with Framer Motion and complete internationalization.",
+            desc: "A modern and responsive portfolio built with React, TypeScript and Tailwind CSS. Features smooth animations with Framer Motion and English in addition to French.",
           },
           project2: {
-            title: "Project 2",
-            desc: "Description second project with the technologies used and main features.",
+            title: "Just Park It",
+            desc: "Application that allows you to find parking spots in real time thanks to the integration of Mapbox GL for mapping and a PHP/MySQL backend for profile management. The goal is to be guided to the nearest available parking space according to the user's criteria (PRM, electric vehicle, etc.).",
           },
         },
       },

@@ -65,7 +65,7 @@ export default function ContactForm() {
             </div>
             <motion.button
               type="submit"
-              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-purple-500 sm:w-fit hover:bg-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-purple-500 sm:w-fit hover:bg-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 "
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.1 }}>
               {t("contactSection.sendButton")}

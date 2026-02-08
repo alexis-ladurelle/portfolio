@@ -22,7 +22,7 @@ function App() {
   const links = [
     {
       name: "GitHub",
-      url: "https://github.com/HmTici",
+      url: "https://github.com/alexis-ladurelle",
       icon: "../src/assets/github.svg",
     },
     {
@@ -50,10 +50,13 @@ function App() {
         scale: { duration: 0.8 },
       }}>
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 mb-10">
-        <header className="my-4 w-full text-right gap-4 flex justify-end-safe">
+        <header
+          tabIndex={0}
+          className="my-4 w-full text-right gap-4 flex justify-end-safe items-center ">
           <a
             href="#contact"
-            className="text-sm font-medium text-center text-purple-600 hover:text-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 rounded px-2 py-1">
+            tabIndex={0}
+            className="text-sm font-medium text-center text-purple-600 hover:text-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500  rounded px-2 py-1">
             {t("hero.contactLink")}
           </a>
           <LangSwitcher />
@@ -81,7 +84,7 @@ function App() {
           {/* PROJECT CARD */}
           <a
             href="#projects"
-            className="focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 rounded-lg  border-2 border-gray-100 hover:border-purple-400 hover:shadow-md transition-all duration-200">
+            className="focus:outline-none focus:ring-2 focus:ring-purple-500  rounded-lg  border-2 border-transparent hover:border-purple-400 hover:shadow-md transition-all duration-200">
             <Card
               title={t("projectCard.title")}
               description={t("projectCard.desc")}
@@ -96,10 +99,10 @@ function App() {
           <Card
             title={t("linkCard.title")}
             description={t("linkCard.desc")}
-            className="lg:col-start-2 lg:row-start-2 lg:row-span-2"
+            className="lg:col-start-2 lg:row-start-2 lg:row-span-2 pb-1.5"
             delay={0.3}
             direction="down">
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-2">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-2 ">
               {links.map((link, index) => (
                 <a
                   key={link.name}
@@ -114,7 +117,7 @@ function App() {
                   <img
                     src={link.icon}
                     alt={link.name}
-                    className="h-10 w-10 object-contain"
+                    className="h-7 w-7 object-contain"
                   />
                   <span className="text-xs sm:text-sm font-semibold text-gray-700">
                     {link.name}
@@ -163,18 +166,17 @@ function App() {
           <ProjectCard
             title={t("projects.project1.title")}
             description={t("projects.project1.desc")}
-            image="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?semt=ais_hybrid&w=740&q=80"
+            image="../src/assets/portfolio-screen.png"
             tags={["React", "TypeScript", "Tailwind", "Framer Motion"]}
-            githubUrl="https://github.com/HmTici/portfolio-pro"
+            githubUrl="https://github.com/alexis-ladurelle/portfolio"
             index={0}
           />
 
           <ProjectCard
             title={t("projects.project2.title")}
             description={t("projects.project2.desc")}
-            image="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?semt=ais_hybrid&w=740&q=80"
-            tags={["React", "TypeScript", "Mapbox GL", "PHP", "MySQL"]}
-            githubUrl="https://github.com/..."
+            image="../src/assets/just-park-it.png"
+            tags={["TypeScript", "Leaflet", "PHP", "MySQL"]}
             index={1}
           />
         </div>

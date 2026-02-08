@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 À propos
 
-Currently, two official plugins are available:
+Portfolio personnel développé avec React, TypeScript, Tailwind CSS et Framer Motion. Ce projet présente mes compétences, mes projets et mes expériences en développement web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies utilisées
 
-## React Compiler
+- **React** avec **TypeScript** pour une base solide
+- **Tailwind CSS** pour un design moderne et responsive
+- **Framer Motion** pour des animations fluides et élégantes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Fonctionnalités
 
-## Expanding the ESLint configuration
+- Design responsive et moderne
+- Animations fluides et interactives
+- Interface multilingue (Français/Anglais)
+- Section projets dynamique
+- Formulaire de contact
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 👨‍💻 Auteur
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Alexis Ladurelle**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Étudiant en 2ème année de BUT Informatique à l'IUT de Metz, spécialisé dans le développement web et mobile.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- LinkedIn: [linkedin.com/in/alexis-ladurelle](https://www.linkedin.com/in/alexis-ladurelle//)
+- Email: [alexis.ladurelle.pro@gmail.com](mailto:alexis.ladurelle.pro@gmail.com)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Ce projet est sous licence MIT.

@@ -156,7 +156,7 @@ function App() {
 
       {/* PROJECT SECTION */}
       <section
-        className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24"
+        className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24 pb-24"
         id="projects">
         <h2 className="text-4xl font-semibold text-center mb-16">
           {t("projects.title")}

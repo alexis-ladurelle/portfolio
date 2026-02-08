@@ -24,7 +24,10 @@ export default function ContactForm() {
           <p className="mb-6 sm:mb-8 lg:mb-16 font-light text-center text-sm sm:text-base lg:text-lg text-gray-500">
             {t("contactSection.desc")}
           </p>
-          <form onSubmit={handleSubmit} id="contact" className="space-y-8">
+          <form
+            onSubmit={handleSubmit}
+            id="contact"
+            className="space-y-8 opacity-60   cursor-not-allowed">
             <div>
               <label htmlFor="email" className="form-label">
                 {t("contactSection.emailLabel")}
@@ -33,9 +36,10 @@ export default function ContactForm() {
                 type="email"
                 id="email"
                 name="email"
-                className="form-input p-2.5"
+                className="form-input p-2.5 cursor-not-allowed"
                 placeholder={t("contactSection.emailPH")}
                 required
+                disabled
               />
             </div>
             <div>
@@ -46,9 +50,10 @@ export default function ContactForm() {
                 type="text"
                 id="subject"
                 name="subject"
-                className="form-input p-3"
+                className="form-input p-3 cursor-not-allowed"
                 placeholder={t("contactSection.subjectPH")}
                 required
+                disabled
               />
             </div>
             <div className="sm:col-span-2">
@@ -59,15 +64,17 @@ export default function ContactForm() {
                 id="message"
                 name="message"
                 rows={6}
-                className="form-input p-2.5 min-h-12 max-h-96"
+                className="form-input p-2.5 min-h-12 max-h-96 pointer-events-none cursor-not-allowed"
                 placeholder={t("contactSection.messagePH")}
+                disabled
               />
             </div>
             <motion.button
               type="submit"
               className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-purple-500 sm:w-fit hover:bg-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 "
               whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.1 }}>
+              transition={{ duration: 0.1 }}
+              disabled>
               {t("contactSection.sendButton")}
             </motion.button>
           </form>

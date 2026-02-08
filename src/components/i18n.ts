@@ -32,7 +32,7 @@ i18n.use(initReactI18next).init({
         },
         contactSection: {
           title: "Me contacter",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, cumque.",
+          desc: "Formulaire de contact actuellement désactivé. N'hésitez pas à me contacter via les liens ci-dessus.",
           emailLabel: "Votre email",
           emailPH: "prenom.nom@gmail.com",
           subjectLabel: "Objet",
@@ -80,7 +80,7 @@ i18n.use(initReactI18next).init({
         },
         contactSection: {
           title: "Contact Me",
-          desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, cumque.",
+          desc: "Contact form currently disabled. Feel free to contact me through the links above.",
           emailLabel: "Your email",
           emailPH: "name.surname@gmail.com",
           subjectLabel: "Subject",

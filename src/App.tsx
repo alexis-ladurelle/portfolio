@@ -11,29 +11,29 @@ function App() {
   const { t } = useTranslation();
 
   const techno = [
-    { name: "React", icon: "../src/assets/react.svg" },
-    { name: "TypeScript", icon: "../src/assets/ts.svg" },
-    { name: "Tailwind CSS", icon: "../src/assets/tailwind.svg" },
-    { name: "MySQL", icon: "../src/assets/mysql.svg" },
-    { name: "PHP", icon: "../src/assets/php.svg" },
-    { name: "Git", icon: "../src/assets/git.svg" },
+    { name: "React", icon: "/assets/react.svg" },
+    { name: "TypeScript", icon: "/assets/ts.svg" },
+    { name: "Tailwind CSS", icon: "/assets/tailwind.svg" },
+    { name: "MySQL", icon: "/assets/mysql.svg" },
+    { name: "PHP", icon: "/assets/php.svg" },
+    { name: "Git", icon: "/assets/git.svg" },
   ];
 
   const links = [
     {
       name: "GitHub",
       url: "https://github.com/alexis-ladurelle",
-      icon: "../src/assets/github.svg",
+      icon: "/assets/github.svg",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/alexis-ladurelle/",
-      icon: "../src/assets/linkedin.svg",
+      icon: "/assets/linkedin.svg",
     },
     {
       name: "Mail",
       url: "mailto:alexis.ladurelle.pro@gmail.com",
-      icon: "../src/assets/mail.svg",
+      icon: "/assets/mail.svg",
     },
   ];
 
@@ -166,7 +166,7 @@ function App() {
           <ProjectCard
             title={t("projects.project1.title")}
             description={t("projects.project1.desc")}
-            image="../src/assets/portfolio-screen.png"
+            image="/assets/portfolio-screen.png"
             tags={["React", "TypeScript", "Tailwind", "Framer Motion"]}
             githubUrl="https://github.com/alexis-ladurelle/portfolio"
             index={0}
@@ -175,7 +175,7 @@ function App() {
           <ProjectCard
             title={t("projects.project2.title")}
             description={t("projects.project2.desc")}
-            image="../src/assets/just-park-it.png"
+            image="/assets/just-park-it.png"
             tags={["TypeScript", "Leaflet", "PHP", "MySQL"]}
             index={1}
           />

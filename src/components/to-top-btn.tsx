@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import chevronUp from "../assets/chevron-up.svg";
+import chevronUp from "/assets/chevron-up.svg";
 
 const ToTopBtn = () => {
   const [visible, setVisible] = useState(false);

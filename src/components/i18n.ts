@@ -54,6 +54,9 @@ i18n.use(initReactI18next).init({
             desc: "Application permettant de trouver des places de parking en temps réel grâce à l'intégration de Leaflet pour la cartographie et d'un backend PHP/MySQL pour la gestion des profil. Le but est de se faire guider à la place de parking disponible la plus proche de l'utilisateur suivant ses critères (PMR, vehicule électrique, etc.).",
           },
         },
+        footer: {
+          text: `©  ${new Date().getFullYear()} - Ladurelle Alexis`,
+        }
       },
     },
     en: {
@@ -102,6 +105,9 @@ i18n.use(initReactI18next).init({
             desc: "Application that allows you to find parking spots in real time thanks to the integration of Leaflet for mapping and a PHP/MySQL backend for profile management. The goal is to be guided to the nearest available parking space according to the user's criteria (PRM, electric vehicle, etc.).",
           },
         },
+        footer: {
+          text: `©  ${new Date().getFullYear()} - Ladurelle Alexis`,
+        }
       },
     },
   },

@@ -6,6 +6,7 @@ import ContactForm from "./components/contact-form.tsx";
 import LangSwitcher from "./components/lang-switcher.tsx";
 import ToTopBtn from "./components/to-top-btn.tsx";
 import ProjectCard from "./components/project-card.tsx";
+import Footer from "./components/footer.tsx";
 
 function App() {
   const { t } = useTranslation();
@@ -158,9 +159,7 @@ function App() {
       <section
         className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-24 pb-24"
         id="projects">
-        <h2 className="text-4xl font-semibold text-center mb-16">
-          {t("projects.title")}
-        </h2>
+        <h2 className="text-4xl font-semibold mb-16">{t("projects.title")}</h2>
 
         <div className="space-y-24">
           <ProjectCard
@@ -183,6 +182,7 @@ function App() {
       </section>
       <ContactForm />
       <ToTopBtn />
+      <Footer />
     </motion.main>
   );
 }

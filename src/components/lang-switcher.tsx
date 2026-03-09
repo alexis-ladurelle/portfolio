@@ -15,7 +15,7 @@ export default function LangSwitcher() {
 
   return (
     <select
-      className="text-gray-700 border-2 border-gray-300 rounded-lg px-3 py-1.5 hover:border-purple-400 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 "
+      className="bg-canvas text-body border-2 border-line rounded-full px-4 py-1.5 hover:border-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
       value={i18nInstance.language}
       onChange={onChangeLang}>
       {LANGUAGES.map(({ code, label }) => (

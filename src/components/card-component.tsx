@@ -29,7 +29,7 @@ export default function Card({
 
   return (
     <motion.section
-      className={`card-base ${className}`}
+      className={`card-base ${className} `}
       initial={{ opacity: 0, ...directionMap[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -37,11 +37,11 @@ export default function Card({
       <div className="absolute inset-px max-lg:rounded-t-4xl"></div>
       <div className="relative flex h-full flex-col overflow-hidden">
         <div className="px-4 pt-4 pb-2 sm:px-6 sm:pt-6 sm:pb-4">
-          <h6 className="text-lg sm:text-xl lg:text-2xl font-medium tracking-tight max-lg:text-center flex items-center justify-between gap-2 max-lg:justify-center">
+          <h6 className="text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight text-heading max-lg:text-center flex items-center justify-between gap-2 max-lg:justify-center">
             {title}
-            {icon && <span className="text-purple-500">{icon}</span>}
+            {icon && <span className="text-accent">{icon}</span>}
           </h6>
-          <p className="mt-2 mx-auto text-sm sm:text-base lg:text-lg text-gray-600 max-lg:text-center whitespace-pre-line">
+          <p className="mt-2 mx-auto text-sm sm:text-base lg:text-lg text-body max-lg:text-center whitespace-pre-line">
             {description}
           </p>
         </div>

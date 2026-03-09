@@ -34,7 +34,7 @@ export default function ProjectCard({
       transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}>
       {/* Image */}
       <div
-        className={`relative rounded-lg overflow-hidden shadow-xl ${
+        className={`relative rounded-2xl overflow-hidden border border-line/50 shadow-sm ${
           isEven ? "" : "lg:col-start-2"
         }`}>
         <img
@@ -49,10 +49,10 @@ export default function ProjectCard({
         className={`space-y-4 ${
           isEven ? "" : "lg:col-start-1 lg:row-start-1"
         }`}>
-        <h3 className="text-2xl lg:text-3xl font-semibold text-gray-900">
+        <h3 className="text-2xl lg:text-3xl font-semibold text-heading">
           {title}
         </h3>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+        <p className="text-sm sm:text-base lg:text-lg text-body leading-relaxed">
           {description}
         </p>
 
@@ -62,7 +62,7 @@ export default function ProjectCard({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 text-xs font-medium bg-purple-100 text-purple-700 rounded-full">
+                className="px-3 py-1 text-xs font-medium bg-accent-light text-accent-dim rounded-full">
                 {tag}
               </span>
             ))}
@@ -76,7 +76,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+              className="px-5 py-2 text-sm font-medium text-body bg-chip rounded-full hover:bg-canvas transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-canvas"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
               {t("projects.viewCode")}
@@ -87,7 +87,7 @@ export default function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+              className="px-5 py-2 text-sm font-medium text-white bg-accent rounded-full hover:bg-accent-hover transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-canvas"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
               {t("projects.viewProject")}
